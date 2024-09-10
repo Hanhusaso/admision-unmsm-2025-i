@@ -16,7 +16,7 @@ const openSans = Open_Sans({
 
 export const metadata = {
 	title: "Admision UNMSM 2025-I",
-	description: "Admision UNMSM 2025-I",
+	description: "Landing Page del Exámen de Admisión UNMSM 2025-I",
 };
 
 export default function RootLayout({ children }) {
