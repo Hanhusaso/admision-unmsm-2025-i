@@ -5,7 +5,7 @@ const Inscripcion = () => {
 		<div className="bg-primary text-white pt-9 pb-[49px] px-4">
 			<div className="container max-w-[703px] mx-auto">
 				<div className="flex flex-col items-center mb-5 md:mb-[47px]">
-					<h2 className="text-center text-lg font-black max-w-[224px]">Proceso de inscripción</h2>
+					<h2 className="text-center text-lg font-black max-w-[224px] font-greatScape">Proceso de inscripción</h2>
 				</div>
 				<div className="font-openSans text-sm">
 					<ol className="space-y-5 mb-[22px]">
