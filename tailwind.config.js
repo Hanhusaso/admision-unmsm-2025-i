@@ -9,6 +9,7 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				openSans: ['var(--font-open-sans)'],
+				greatScape: ['var(--font-great-scape)'],
 			},
 			colors: {
 				primary: {

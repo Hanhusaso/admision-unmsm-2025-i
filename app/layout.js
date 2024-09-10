@@ -1,17 +1,12 @@
-// import localFont from "next/font/local";
+import localFont from "next/font/local";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
 
-// const geistSans = localFont({
-// 	src: "./fonts/GeistVF.woff",
-// 	variable: "--font-geist-sans",
-// 	weight: "100 900",
-// });
-// const geistMono = localFont({
-// 	src: "./fonts/GeistMonoVF.woff",
-// 	variable: "--font-geist-mono",
-// 	weight: "100 900",
-// });
+const greatScape = localFont({
+	src: "./fonts/GreatEscapeW00Black.ttf",
+	variable: "--font-great-scape",
+	weight: "100 900",
+});
 
 const openSans = Open_Sans({
 	subsets: ["latin"],
@@ -28,7 +23,7 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="es">
 			<body
-				className={`${openSans.variable} antialiased`}
+				className={`${openSans.variable} ${greatScape.variable} antialiased`}
 			>
 				{children}
 			</body>
