@@ -26,8 +26,8 @@ const Facultades = () => {
 				</div>
 				{
 					areas.map((area, index) => (
-						<>
-							<div key={index} className="flex flex-col items-center mb-[15px] md:mb-[26px]">
+						<React.Fragment key={index}>
+							<div className="flex flex-col items-center mb-[15px] md:mb-[26px]">
 								<h3 className="text-center text-tertiary text-lg md:text-xl font-black max-w-[224px] font-greatScape">{area}</h3>
 							</div>
 							<div className="mx-auto max-w-[1029px]">
@@ -71,7 +71,7 @@ const Facultades = () => {
 															height={183.94}
 															alt={video.facultad}
 															quality={100}
-															className="w-full aspect-video"
+															className="w-full h-auto aspect-video"
 														/>
 														<div className="absolute bg-primary top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[77px] h-[77px] rounded-[20px] transition-opacity opacity-70 group-hover:opacity-100 duration-300">
 															<Image
@@ -100,7 +100,7 @@ const Facultades = () => {
 									</div>
 								</Splide>
 							</div>
-						</>
+						</React.Fragment>
 					))
 				}
 
