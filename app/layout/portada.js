@@ -1,19 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
 
-const Inscribete = ({ className }) => {
-	return (
-		<div className={className}>
-			<Link
-				href="/inscripcion"
-				className="block bg-transparent font-greatScape text-white text-center text-lg font-black border-4 border-current rounded-[20px] p-[14px]"
-			>
-				<span>¡Inscríbete ahora!</span>
-			</Link>
-		</div>
-	)
-}
-
 const H1 = ({ className }) => {
 	return (
 		<div className={className}>
@@ -37,6 +24,19 @@ const CierreInscripciones = ({ className }) => {
 	return (
 		<div className={className}>
 			<p className="text-white md:text-[20px] lg:text-[28px] xl:text-[30px] font-greatScape lg:text-nowrap lg:w-[440px] max-md:leading-[22.4px]">Cierre de inscripciones: 14 de setiembre</p>
+		</div>
+	)
+}
+
+const Inscribete = ({ className }) => {
+	return (
+		<div className={className}>
+			<a
+				href="#inscripcion"
+				className="block bg-transparent font-greatScape text-white text-center text-lg font-black border-4 border-current rounded-[20px] p-[14px]"
+			>
+				<span>¡Inscríbete ahora!</span>
+			</a>
 		</div>
 	)
 }
