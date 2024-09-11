@@ -61,7 +61,7 @@ const Header = () => {
 							whileInView="onscreen"
 							viewport={{ once: true, amount: 0.1 }}
 							variants={entradaMenu}
-							className="flex flex-col lg:flex-row font-semibold font-montserrat gap-x-4 xl:gap-x-16 text-[15px] xl:text-base"
+							className="flex flex-col lg:flex-row font-semibold font-montserrat gap-x-4 xl:gap-x-16 text-[15px] xl:text-base font-greatScape"
 						>
 							<a
 								onClick={hiddenMenu}

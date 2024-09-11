@@ -14,11 +14,16 @@ const Inscripcion = () => {
 							<div>
 								<h3 className="font-extrabold mb-4">Adquiere el reglamento</h3>
 								<p className="mb-2">Realiza el pago de S/ 70.00 de manera:</p>
-								<ul className="list-disc list-inside ml-1 mb-2">
-									<li>Presencial: en el Banco de la Nación (BN)</li>
-									<li>Virtual: en la plataforma <a href="https://www.pagalo.pe/" rel="noopener noreferrer" target="_blank" className="font-bold underline decoration-1">Págalo.pe</a></li>
+								<ul className="list-disc list-inside ml-1">
+									<li>Presencial: en el Banco de la Nación (BN) o en el Banco de Crédito del Perú (BCP)</li>
+									<li>
+										<span>Virtual:</span>
+										<ol className="list-decimal list-outside ml-9">
+											<li>En la plataforma <a href="https://www.pagalo.pe/" rel="noopener noreferrer" target="_blank" className="font-bold underline decoration-1">Págalo.pe</a> (código de pago: 9516)</li>
+											<li>En la aplicación Banco Móvil BCP (ingresa a pagar servicios y busca el nombre de la universidad como &ldquo;Universidad Nac Mayor de San Marcos&rdquo; , utiliza el código de pago 009516 junto al número de DNI)</li>
+										</ol>
+									</li>
 								</ul>
-								<p>El código de pago es 9516</p>
 							</div>
 						</li>
 						<li className="flex items-baseline">
@@ -35,13 +40,20 @@ const Inscripcion = () => {
 								<h3 className="font-extrabold mb-4">Realiza el pago de inscripción</h3>
 								<p className="mb-2">Realiza el pago de manera:</p>
 								<ul className="list-disc list-inside ml-1 mb-2">
-									<li>Presencial: en el Banco de la Nación (BN)</li>
-									<li>Virtual: en la plataforma <a href="https://www.pagalo.pe/" rel="noopener noreferrer" target="_blank" className="font-bold underline decoration-1">Págalo.pe</a></li>
+									<li>Presencial: en el Banco de la Nación (BN) o en el Banco de Crédito del Perú (BCP)</li>
+									<li>Virtual: en la plataforma <a href="https://www.pagalo.pe/" rel="noopener noreferrer" target="_blank" className="font-bold underline decoration-1">Págalo.pe</a> o en la aplicación Banca Móvil BCP</li>
 								</ul>
 								<p className="mb-2">Montos y códigos de pago:</p>
-								<ul className="list-disc list-inside ml-1">
+								<p className="mb-2">Págalo.pe:</p>
+								<ul className="list-disc list-inside ml-1 mb-2">
 									<li>Institución educativa pública: S/ 450.00, código de pago: 9507</li>
 									<li>Institución educativa privada: S/ 850.00, código de pago: 9508</li>
+								</ul>
+								<p className="mb-2">Aplicación Banca Móvil BCP:</p>
+								<p className="mb-2">Ingresa a pago de servicios y busca el nombre de la universidad como &ldquo;Universidad Nac Mayor de San Marcos&rdquo; y utiliza el código de pago correspondiente</p>
+								<ul className="list-disc list-inside ml-1 mb-2">
+									<li>Institución educativa pública: S/ 450.00, código de pago: 009507 más el número de DNI</li>
+									<li>Institución educativa privada: S/ 850.00, código de pago: 009508 más el número de DNI</li>
 								</ul>
 							</div>
 						</li>
