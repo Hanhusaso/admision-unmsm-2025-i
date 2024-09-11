@@ -1,10 +1,19 @@
-import React from 'react'
+'use client';
+
+import React, { useState } from 'react'
 import Image from 'next/image'
 import playIcon from '@/public/icons/play-icon.svg'
 import testimonio1 from '@/public/images/testimonio-1.png'
 import testimonio2 from '@/public/images/testimonio-2.png'
 
+import Modal from '../components/modal';
+import YoutubeEmbed from '../components/youtube-embed';
+
 const Egresados = () => {
+
+	const [open, setOpen] = useState(false);
+	const [activeVideoIframe, setActiveVideoIframe] = useState(null);
+
 	return (
 		<div className="pt-[33px] pb-5 md:pb-[51px] px-4">
 			<div className="container mx-auto">
@@ -32,7 +41,13 @@ const Egresados = () => {
 									<p className="leading-[19.6px] text-sm">&ldquo;Elegí a San Marcos por su prestigio académico y su sólida trayectoria en ciencias. Sabía que me brindaría oportunidades únicas&rdquo;</p>
 								</div>
 							</div>
-							<a className="bg-primary rounded-b-[20px] h-[60px] flex gap-x-[10px] items-center justify-center" href="#" target="_blank">
+							<div
+								className="bg-primary rounded-b-[20px] h-[60px] flex gap-x-[10px] items-center justify-center cursor-pointer"
+								onClick={() => {
+									setActiveVideoIframe(<YoutubeEmbed codigo_embed="Z-UVLx3-7Ts" />)
+									setOpen(true)
+								}}
+							>
 								<Image
 									src={playIcon}
 									alt="Play icon"
@@ -40,7 +55,7 @@ const Egresados = () => {
 									height={24}
 								/>
 								<span className="font-extrabold">Ver entrevista</span>
-							</a>
+							</div>
 						</div>
 					</div>
 					<div className="w-full max-w-[323px] flex flex-row relative">
@@ -62,7 +77,13 @@ const Egresados = () => {
 									<p className="leading-[19.6px] text-sm">&ldquo;Haber pasado por cada aula y haber conocido a cada profesor me ayudaron a inclinarme a la investigación científica&rdquo;</p>
 								</div>
 							</div>
-							<a className="bg-primary rounded-b-[20px] h-[60px] flex gap-x-[10px] items-center justify-center" href="#" target="_blank">
+							<div
+								className="bg-primary rounded-b-[20px] h-[60px] flex gap-x-[10px] items-center justify-center cursor-pointer"
+								onClick={() => {
+									setActiveVideoIframe(<YoutubeEmbed codigo_embed="OEI-M1KbWTk" />)
+									setOpen(true)
+								}}
+							>
 								<Image
 									src={playIcon}
 									alt="Play icon"
@@ -70,12 +91,17 @@ const Egresados = () => {
 									height={24}
 								/>
 								<span className="font-extrabold">Ver entrevista</span>
-							</a>
+							</div>
 						</div>
 						<div className="basis-[15.79%] bg-secondary rounded-e-[20px] h-[109px]"></div>
 					</div>
 				</div>
 			</div>
+			<Modal open={open} setOpen={setOpen}>
+				<div className="iframe-container">
+					{activeVideoIframe}
+				</div>
+			</Modal>
 		</div>
 	)
 }
