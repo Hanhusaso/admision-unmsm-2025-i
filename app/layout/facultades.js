@@ -2,11 +2,14 @@
 
 import React, { useState } from 'react'
 import Image from 'next/image';
-import playIcon from '@/public/icons/play-icon.svg'
 import { Splide, SplideTrack, SplideSlide } from '@/app/libraries/splide';
+import playIcon from '@/public/icons/play-icon.svg'
+
 import ChevronRightIcon from '../components/icons/chevron-right-icon';
-import videosFacultadesPorAreas from '../data/videos-facultades-por-areas';
 import Modal from '../components/modal';
+import YoutubeEmbed from '../components/youtube-embed';
+
+import videosFacultadesPorAreas from '../data/videos-facultades-por-areas';
 
 const Facultades = () => {
 
@@ -14,11 +17,6 @@ const Facultades = () => {
 	const [activeVideoIframe, setActiveVideoIframe] = useState(null);
 
 	const areas = Object.keys(videosFacultadesPorAreas);
-
-	const get_iframe_link_embed = (codigo_embed) => {
-		const link = `https://www.youtube.com/embed/${codigo_embed}`;
-		return <iframe width="560" height="315" src={link} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-	}
 
 	return (
 		<div className="pt-5 md:pt-[51px] pb-10 px-4">
@@ -57,7 +55,7 @@ const Facultades = () => {
 												<figure
 													className="w-[272px] md:w-[327px] cursor-pointer group"
 													onClick={() => {
-														setActiveVideoIframe(get_iframe_link_embed(video.codigo_embed))
+														setActiveVideoIframe(<YoutubeEmbed codigo_embed={video.youtube_codigo_embed} />)
 														setOpen(true)
 													}}
 												>
@@ -68,7 +66,7 @@ const Facultades = () => {
 													</div>
 													<div className="w-full relative">
 														<Image
-															src={`https://i.ytimg.com/vi/${video.codigo_embed}/maxresdefault.jpg`}
+															src={`https://i.ytimg.com/vi/${video.youtube_codigo_embed}/maxresdefault.jpg`}
 															width={327}
 															height={183.94}
 															alt={video.facultad}
