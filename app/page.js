@@ -3,7 +3,7 @@ import Portada from "./layout/portada";
 import Egresados from "./layout/egresados";
 import Facultades from "./layout/facultades";
 import Inscripcion from "./layout/inscripcion";
-import Footer from "./layout/footer";
+// import Footer from "./layout/footer";
 
 export default function Home() {
 	return (
@@ -15,7 +15,7 @@ export default function Home() {
 				<Facultades />
 				<Inscripcion />
 			</main>
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 }
