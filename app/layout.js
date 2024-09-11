@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
+import '@splidejs/react-splide/css';
 
 const greatScape = localFont({
 	src: "./fonts/GreatEscapeW00Black.ttf",
