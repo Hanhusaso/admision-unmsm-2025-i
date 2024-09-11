@@ -22,8 +22,8 @@ const Header = () => {
 
 	return (
 		<header className="bg-primary text-white">
-			<div>
-				<div className="mx-auto max-w-[1029px] px-5 md:px-8 py-6 flex flex-row justify-between items-center">
+			<div className="px-4">
+				<div className="mx-auto max-w-[1029px] py-[22px] flex flex-row justify-between items-center">
 					<motion.div
 						initial="offscreen"
 						whileInView="onscreen"
@@ -60,7 +60,7 @@ const Header = () => {
 							whileInView="onscreen"
 							viewport={{ once: true, amount: 0.1 }}
 							variants={entradaMenu}
-							className="flex flex-col lg:flex-row font-semibold font-montserrat gap-x-4 xl:gap-x-10 text-[15px] xl:text-base"
+							className="flex flex-col lg:flex-row font-semibold font-montserrat gap-x-4 xl:gap-x-16 text-[15px] xl:text-base"
 						>
 							<a
 								onClick={hiddenMenu}
