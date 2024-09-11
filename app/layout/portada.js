@@ -58,7 +58,7 @@ const Portada = () => {
 						<CierreInscripciones className="absolute lg:hidden bottom-0 w-[120px] md:w-[220px]" />
 						<div className="hole max-md:max-w-[320px] md:w-[500px] xl:w-[557px]">
 							<video className="aspect-video w-full h-full object-cover" autoPlay muted loop>
-								<source src="https://d20cra10nhu74a.cloudfront.net/ciencias-biologicas/WEB_DOCTORADOS_SANMARCOS_CIENCIASBIO_h264.mp4" type="video/mp4" />
+								<source src="https://d20cra10nhu74a.cloudfront.net/unmsm/PLAZA+PANORAMICA+1.mp4" type="video/mp4" />
 								Tu navegador no soporta la etiqueta video.
 							</video>
 						</div>
