@@ -65,18 +65,14 @@ const Portada = () => {
 					<div className="relative">
 						<Fechas className="lg:hidden relative top-4 z-10" />
 						<CierreInscripciones className="absolute lg:hidden bottom-0 w-[120px] md:w-[220px]" />
-						<motion.div
-							initial="offscreen"
-							whileInView="onscreen"
-							viewport={{ once: true, amount: 0.1 }}
-							variants={entradaImagenPortada}
+						<div
 							className="hole max-md:max-w-[320px] md:w-[500px] xl:w-[557px]"
 						>
 							<video className="aspect-video w-full h-full object-cover" autoPlay muted loop>
 								<source src="https://d20cra10nhu74a.cloudfront.net/unmsm/PLAZA+PANORAMICA+1.mp4" type="video/mp4" />
 								Tu navegador no soporta la etiqueta video.
 							</video>
-						</motion.div>
+						</div>
 					</div>
 				</div>
 				<Inscribete className="lg:hidden max-lg:w-[262px]" />
