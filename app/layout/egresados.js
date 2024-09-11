@@ -9,7 +9,7 @@ const Egresados = () => {
 		<div className="pt-[33px] pb-5 md:pb-[51px] px-4">
 			<div className="container mx-auto">
 				<div className="flex flex-col items-center mb-[15px] md:mb-[26px]">
-					<h2 className="text-center text-primary text-lg font-black max-w-[224px] font-greatScape">Escucha a nuestros egresados</h2>
+					<h2 className="text-center text-primary text-lg md:text-2xl font-black max-w-[224px] font-greatScape">Escucha a nuestros egresados</h2>
 				</div>
 				<div className="flex flex-col md:flex-row justify-center gap-y-[20px] gap-x-[30px] items-center text-white font-openSans">
 					<div className="w-full max-w-[323px] flex flex-row relative">
