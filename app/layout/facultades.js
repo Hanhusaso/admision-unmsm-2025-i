@@ -24,7 +24,7 @@ const Facultades = () => {
 		<div className="pt-5 md:pt-[51px] pb-10 px-4">
 			<div className="container mx-auto">
 				<div className="flex flex-col items-center mb-[25px] md:mb-[30px]">
-					<h2 className="text-center text-primary text-lg md:text-2xl font-black max-w-[224px] font-greatScape">Conoce nuestras facultades</h2>
+					<h2 className="text-center text-primary text-lg md:text-2xl font-black max-w-[224px] md:max-w-none font-greatScape">Conoce nuestras facultades</h2>
 				</div>
 				{
 					areas.map((area, index) => (
