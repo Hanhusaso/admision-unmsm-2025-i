@@ -6,6 +6,10 @@ const nextConfig = {
 				protocol: 'https',
 				hostname: 'i.ytimg.com'
 			},
+			{
+				protocol: 'https',
+				hostname: 'd20cra10nhu74a.cloudfront.net'
+			}
 		]
 	}
 };

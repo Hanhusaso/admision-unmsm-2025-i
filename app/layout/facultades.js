@@ -50,48 +50,45 @@ const Facultades = () => {
 									className="splide-videos mb-14 md:mb-10"
 								>
 									<SplideTrack>
-										{videosFacultadesPorAreas[area].map((video, index) => {
-											const [imgYoutubeSrc, setImgYoutubeSrc] = useState(`https://i.ytimg.com/vi/${video.youtube_codigo_embed}/maxresdefault.jpg`);
-											return (
-												<SplideSlide key={index}>
-													<figure
-														className="w-[272px] md:w-[327px] cursor-pointer group"
-														onClick={() => {
-															setActiveVideoIframe(<YoutubeEmbed codigo_embed={video.youtube_codigo_embed} />)
-															setOpen(true)
-														}}
-													>
-														<div className="bg-secondary rounded-t-[20px] py-4 px-7 max-w-[259px] md:max-w-[300px]">
-															<figcaption className="text-white text-base font-extrabold font-openSans">
-																<h4>{video.facultad}</h4>
-															</figcaption>
-														</div>
-														<div className="w-full relative">
+										{videosFacultadesPorAreas[area].map((video, idx) => (
+											<SplideSlide key={idx}>
+												<figure
+													className="w-[272px] md:w-[327px] cursor-pointer group"
+													onClick={() => {
+														setActiveVideoIframe(<YoutubeEmbed codigo_embed={video.youtube_codigo_embed} />)
+														setOpen(true)
+													}}
+												>
+													<div className="bg-secondary rounded-t-[20px] py-4 px-7 max-w-[259px] md:max-w-[300px]">
+														<figcaption className="text-white text-base font-extrabold font-openSans">
+															<h4>{video.facultad}</h4>
+														</figcaption>
+													</div>
+													<div className="w-full relative">
+														<Image
+															src={video.imagen}
+															width={327}
+															height={183.94}
+															alt={video.facultad}
+															quality={100}
+															className="w-full h-auto aspect-video"
+														/>
+														<div className="absolute bg-primary top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[77px] h-[77px] rounded-[20px] transition-opacity opacity-70 group-hover:opacity-100 duration-300">
 															<Image
-																src={imgYoutubeSrc}
-																onError={() => setImgYoutubeSrc(`https://i.ytimg.com/vi/${video.youtube_codigo_embed}/hqdefault.jpg`)}
-																width={327}
-																height={183.94}
-																alt={video.facultad}
+																src={playIcon}
+																width={30}
+																height={30}
+																alt="Play icon"
 																quality={100}
-																className="w-full h-auto aspect-video"
+																className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[30px] h-[30px]"
 															/>
-															<div className="absolute bg-primary top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[77px] h-[77px] rounded-[20px] transition-opacity opacity-70 group-hover:opacity-100 duration-300">
-																<Image
-																	src={playIcon}
-																	width={30}
-																	height={30}
-																	alt="Play icon"
-																	quality={100}
-																	className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[30px] h-[30px]"
-																/>
-															</div>
 														</div>
+													</div>
 
-													</figure>
-												</SplideSlide>
-											)
-										})}
+												</figure>
+											</SplideSlide>
+										)
+										)}
 									</SplideTrack>
 
 									<div className="splide__arrows">
