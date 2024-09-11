@@ -1,5 +1,8 @@
+'use client';
+
 import React from 'react'
-import Link from 'next/link'
+import { motion } from 'framer-motion';
+import { entradaImagenPortada, textoPortada } from '@/app/libraries/framer-motion/animations';
 
 const H1 = ({ className }) => {
 	return (
@@ -47,21 +50,33 @@ const Portada = () => {
 			<div className="container max-w-[1029px] mx-auto flex flex-col items-center">
 				<H1 className="lg:hidden" />
 				<div className="lg:flex lg:flex-row lg:gap-x-[33px] max-lg:mb-[35px]">
-					<div className="max-lg:hidden lg:pt-[35px]">
+					<motion.div
+						initial="offscreen"
+						whileInView="onscreen"
+						viewport={{ once: true, amount: 0.1 }}
+						variants={textoPortada}
+						className="max-lg:hidden lg:pt-[35px]"
+					>
 						<H1 />
 						<Fechas className="mb-[13px]" />
 						<CierreInscripciones className="mb-[22px]" />
 						<Inscribete className="w-[319px]" />
-					</div>
+					</motion.div>
 					<div className="relative">
 						<Fechas className="lg:hidden relative top-4 z-10" />
 						<CierreInscripciones className="absolute lg:hidden bottom-0 w-[120px] md:w-[220px]" />
-						<div className="hole max-md:max-w-[320px] md:w-[500px] xl:w-[557px]">
+						<motion.div
+							initial="offscreen"
+							whileInView="onscreen"
+							viewport={{ once: true, amount: 0.1 }}
+							variants={entradaImagenPortada}
+							className="hole max-md:max-w-[320px] md:w-[500px] xl:w-[557px]"
+						>
 							<video className="aspect-video w-full h-full object-cover" autoPlay muted loop>
 								<source src="https://d20cra10nhu74a.cloudfront.net/unmsm/PLAZA+PANORAMICA+1.mp4" type="video/mp4" />
 								Tu navegador no soporta la etiqueta video.
 							</video>
-						</div>
+						</motion.div>
 					</div>
 				</div>
 				<Inscribete className="lg:hidden max-lg:w-[262px]" />

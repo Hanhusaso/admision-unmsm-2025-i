@@ -32,7 +32,7 @@ export const entradaMenu = {
 
 export const entradaImagenPortada = {
 	offscreen: {
-		x: 80,
+		x: 0,
 		opacity: 0,
 	},
 	onscreen: {
@@ -46,9 +46,9 @@ export const entradaImagenPortada = {
 	},
 };
 
-export const whatsapp = {
+export const textoPortada = {
 	offscreen: {
-		x: 80,
+		x: -80,
 		opacity: 0,
 	},
 	onscreen: {
