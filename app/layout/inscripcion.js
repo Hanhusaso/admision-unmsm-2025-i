@@ -8,13 +8,13 @@ const Inscripcion = () => {
 					<h2 className="text-center text-lg font-black max-w-[224px] font-greatScape">Proceso de inscripción</h2>
 				</div>
 				<div className="font-openSans text-sm">
-					<ol className="space-y-5 mb-[22px]">
+					<ol className="space-y-5 mb-[22px] md:mb-[26px]">
 						<li className="flex items-baseline">
 							<span className="font-black text-xl mr-3">1</span>
 							<div>
 								<h3 className="font-extrabold mb-4">Adquiere el reglamento</h3>
 								<p className="mb-2">Realiza el pago de S/ 70.00 de manera:</p>
-								<ul className="list-disc list-inside ml-1">
+								<ul className="list-disc list-inside ml-1 mb-2">
 									<li>Presencial: en el Banco de la Nación (BN)</li>
 									<li>Virtual: en la plataforma <a href="https://www.pagalo.pe/" rel="noopener noreferrer" target="_blank" className="font-bold underline decoration-1">Págalo.pe</a></li>
 								</ul>
