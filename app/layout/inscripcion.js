@@ -10,7 +10,7 @@ const Inscripcion = () => {
 				<div className="font-openSans text-sm">
 					<ol className="space-y-5 mb-[22px] md:mb-[26px]">
 						<li className="flex items-baseline">
-							<span className="font-black text-xl mr-3">1</span>
+							<span className="font-black text-xl mr-3 font-greatScape">1</span>
 							<div>
 								<h3 className="font-extrabold mb-4">Adquiere el reglamento</h3>
 								<p className="mb-2">Realiza el pago de S/ 70.00 de manera:</p>
@@ -22,7 +22,7 @@ const Inscripcion = () => {
 							</div>
 						</li>
 						<li className="flex items-baseline">
-							<span className="font-black text-xl mr-3">2</span>
+							<span className="font-black text-xl mr-3 font-greatScape">2</span>
 							<div>
 								<h3 className="font-extrabold mb-4">Registra el pago y tus datos</h3>
 								<p className="mb-2">Hazlo en la página web <a href="https://admision.unmsm.edu.pe/" rel="noopener noreferrer" target="_blank" className="font-bold underline decoration-1">admision.unmsm.edu.pe</a></p>
@@ -30,7 +30,7 @@ const Inscripcion = () => {
 							</div>
 						</li>
 						<li className="flex items-baseline">
-							<span className="font-black text-xl mr-3">3</span>
+							<span className="font-black text-xl mr-3 font-greatScape">3</span>
 							<div>
 								<h3 className="font-extrabold mb-4">Realiza el pago de inscripción</h3>
 								<p className="mb-2">Realiza el pago de manera:</p>
@@ -46,7 +46,7 @@ const Inscripcion = () => {
 							</div>
 						</li>
 						<li className="flex items-baseline">
-							<span className="font-black text-xl mr-3">4</span>
+							<span className="font-black text-xl mr-3 font-greatScape">4</span>
 							<div>
 								<h3 className="font-extrabold mb-4">Ingresa los datos del pago realizado</h3>
 								<p>Ingresa la información de los recibos y tus datos personales en la página web <a href="https://admision.unmsm.edu.pe/" rel="noopener noreferrer" target="_blank" className="font-bold underline decoration-1">admision.unmsm.edu.pe</a></p>
