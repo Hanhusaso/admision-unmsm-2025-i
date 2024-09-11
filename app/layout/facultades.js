@@ -30,7 +30,7 @@ const Facultades = () => {
 					areas.map((area, index) => (
 						<>
 							<div key={index} className="flex flex-col items-center mb-[15px] md:mb-[26px]">
-								<h2 className="text-center text-tertiary text-lg md:text-xl font-black max-w-[224px] font-greatScape">{area}</h2>
+								<h3 className="text-center text-tertiary text-lg md:text-xl font-black max-w-[224px] font-greatScape">{area}</h3>
 							</div>
 							<div className="mx-auto max-w-[1029px]">
 								<Splide
@@ -62,8 +62,8 @@ const Facultades = () => {
 													}}
 												>
 													<div className="bg-secondary rounded-t-[20px] py-4 px-7 max-w-[259px] md:max-w-[300px]">
-														<figcaption className="text-white font-extrabold font-openSans">
-															{video.facultad}
+														<figcaption className="text-white text-base font-extrabold font-openSans">
+															<h4>{video.facultad}</h4>
 														</figcaption>
 													</div>
 													<div className="w-full relative">
