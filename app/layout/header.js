@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import MenuIcon from '@/app/components/icons/menu-icon';
 import CloseIcon from '@/app/components/icons/close-icon';
-import logo from '@/public/icons/logo-UNMSM.svg';
 
 import { motion } from 'framer-motion';
 import { entradaMenu } from '@/app/libraries/framer-motion/animations';
@@ -19,6 +18,8 @@ const Header = () => {
 	const hiddenMenu = () => {
 		setOpen(false);
 	};
+
+	const logo = "https://d20cra10nhu74a.cloudfront.net/unmsm/logo-UNMSM.svg"
 
 	return (
 		<header className="bg-primary text-white">

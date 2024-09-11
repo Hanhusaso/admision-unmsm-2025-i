@@ -2,9 +2,6 @@
 
 import React, { useState } from 'react'
 import Image from 'next/image'
-import playIcon from '@/public/icons/play-icon.svg'
-import testimonio1 from '@/public/images/testimonio-1.png'
-import testimonio2 from '@/public/images/testimonio-2.png'
 
 import Modal from '../components/modal';
 import YoutubeEmbed from '../components/youtube-embed';
@@ -13,6 +10,10 @@ const Egresados = () => {
 
 	const [open, setOpen] = useState(false);
 	const [activeVideoIframe, setActiveVideoIframe] = useState(null);
+
+	const testimonio1 = "https://d20cra10nhu74a.cloudfront.net/unmsm/testimonio-1.png"
+	const testimonio2 = "https://d20cra10nhu74a.cloudfront.net/unmsm/testimonio-2.png"
+	const playIcon = "https://d20cra10nhu74a.cloudfront.net/unmsm/play-icon.svg"
 
 	return (
 		<div className="pt-[33px] pb-5 md:pb-[51px] px-4">

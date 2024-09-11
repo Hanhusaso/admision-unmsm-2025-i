@@ -3,7 +3,6 @@
 import React, { useState } from 'react'
 import Image from 'next/image';
 import { Splide, SplideTrack, SplideSlide } from '@/app/libraries/splide';
-import playIcon from '@/public/icons/play-icon.svg'
 
 import ChevronRightIcon from '../components/icons/chevron-right-icon';
 import Modal from '../components/modal';
@@ -17,6 +16,8 @@ const Facultades = () => {
 	const [activeVideoIframe, setActiveVideoIframe] = useState(null);
 
 	const areas = Object.keys(videosFacultadesPorAreas);
+
+	const playIcon = "https://d20cra10nhu74a.cloudfront.net/unmsm/play-icon.svg"
 
 	return (
 		<div className="pt-5 md:pt-[51px] pb-10 px-4" id="facultades">
