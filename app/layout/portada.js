@@ -1,35 +1,46 @@
 'use client';
 
-import React from 'react'
+import React from 'react';
 import { motion } from 'framer-motion';
-import { entradaImagenPortada, textoPortada } from '@/app/libraries/framer-motion/animations';
+import {
+	entradaImagenPortada,
+	textoPortada,
+} from '@/app/libraries/framer-motion/animations';
 
 const H1 = ({ className }) => {
 	return (
 		<div className={className}>
 			<h1 className="text-white max-md:text-center mb-3 leading-[1.2] font-greatScape">
-				<span className="text-[26px] lg:text-[37px] xl:text-[42px] block">EXAMEN DE ADMISIÓN</span>{' '}
-				<span className="text-[34px] lg:text-[55px] xl:text-[63px] block">UNMSM 2025-I</span>
+				<span className="text-[26px] lg:text-[37px] xl:text-[42px] block">
+					EXAMEN DE ADMISIÓN
+				</span>{' '}
+				<span className="text-[34px] lg:text-[55px] xl:text-[63px] block">
+					UNMSM 2025-I
+				</span>
 			</h1>
 		</div>
-	)
-}
+	);
+};
 
 const Fechas = ({ className }) => {
 	return (
 		<div className={className}>
-			<div className="bg-secondary text-white font-greatScape text-[18px] md:text-[26px] inline-block rounded-r-[20px] pl-5 md:pl-[30px] py-3 md:py-[17px] pr-[25px] md:pr-[41px]">5, 6, 12 y 13 de octubre</div>
+			<div className="bg-secondary text-white font-greatScape text-[18px] md:text-[26px] inline-block rounded-r-[20px] pl-5 md:pl-[30px] py-3 md:py-[17px] pr-[25px] md:pr-[41px]">
+				5, 6, 12 y 13 de octubre
+			</div>
 		</div>
-	)
-}
+	);
+};
 
 const CierreInscripciones = ({ className }) => {
 	return (
 		<div className={className}>
-			<p className="text-white md:text-[20px] lg:text-[28px] xl:text-[30px] font-greatScape lg:text-nowrap lg:w-[440px] max-md:leading-[22.4px]">Cierre de inscripciones: 14 de setiembre</p>
+			<p className="text-white md:text-[20px] lg:text-[28px] xl:text-[30px] font-greatScape lg:text-nowrap lg:w-[440px] max-md:leading-[22.4px]">
+				Cierre de inscripciones: 21 de setiembre
+			</p>
 		</div>
-	)
-}
+	);
+};
 
 const Inscribete = ({ className }) => {
 	return (
@@ -41,8 +52,8 @@ const Inscribete = ({ className }) => {
 				<span>¡Inscríbete ahora!</span>
 			</a>
 		</div>
-	)
-}
+	);
+};
 
 const Portada = () => {
 	return (
@@ -65,11 +76,17 @@ const Portada = () => {
 					<div className="relative">
 						<Fechas className="lg:hidden relative top-4 z-10" />
 						<CierreInscripciones className="absolute lg:hidden bottom-0 w-[120px] md:w-[220px]" />
-						<div
-							className="hole max-md:max-w-[320px] md:w-[500px] xl:w-[557px]"
-						>
-							<video className="aspect-video w-full h-full object-cover" autoPlay muted loop>
-								<source src="https://d20cra10nhu74a.cloudfront.net/unmsm/PLAZA+PANORAMICA+1.mp4" type="video/mp4" />
+						<div className="hole max-md:max-w-[320px] md:w-[500px] xl:w-[557px]">
+							<video
+								className="aspect-video w-full h-full object-cover"
+								autoPlay
+								muted
+								loop
+							>
+								<source
+									src="https://d20cra10nhu74a.cloudfront.net/unmsm/PLAZA+PANORAMICA+1.mp4"
+									type="video/mp4"
+								/>
 								Tu navegador no soporta la etiqueta video.
 							</video>
 						</div>
@@ -78,7 +95,7 @@ const Portada = () => {
 				<Inscribete className="lg:hidden max-lg:w-[262px]" />
 			</div>
 		</div>
-	)
-}
+	);
+};
 
-export default Portada
+export default Portada;
